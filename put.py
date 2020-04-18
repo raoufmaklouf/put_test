@@ -95,10 +95,3 @@ word_queue = build_wordlist(raw_words)
 for i in range(threads):
     t = threading.Thread(target=main,args=(word_queue,))
     t.start()
-
-
-
-
-
-
-
