@@ -25,7 +25,7 @@ def request_(url):
     headers = {'User-Agent':'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.0.5) Gecko/20060731 Firefox/1.5.0.5 Flock/0.7.4.1'} 
     data="TFwKlsH7pVbfJ"
     filename='poc.html'
-    url=url+filename
+    url=url+'/'+filename
     try:
         r=requests.put(url, data, headers=headers, verify=False)
         scode=r.status_code
